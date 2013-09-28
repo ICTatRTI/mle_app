@@ -1,14 +1,49 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>MleApp</title>
+  <title>Gates MLE</title>
+   <!--[if lt IE 9]>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js" type="text/javascript"></script>
+  <![endif]-->
   <%= stylesheet_link_tag    "application", :media => "all" %>
   <%= javascript_include_tag "application" %>
   <%= csrf_meta_tags %>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
 
-<%= yield %>
+<div class="navbar navbar-fixed-top">
+    <div class="navbar-inner">
+      <div class="container">
+        <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </a>
+        <a class="brand" href="#">Gates MLE</a>
+        <div class="nav-collapse">
+          <ul class="nav">
+            <li><%= link_to "Browse Indicators", indicators_path %></li>
+            <li><%= link_to "Reports" %></li>
+            <li><%= link_to "Submit Survey" %></li>
+            <li><%= link_to "Contact" %></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+	
+<div class="container">
+	<div class="row">
+		<div class="span9"><%= yield %></div>
+		<div class="span3">
+			<h2>About this Project</h2>
+			At the end of 2012, the Bill & Melinda Gates Foundation leadership approved a cross-cutting strategy for the integrated treatment of childhood illnesses. The initiative is managed by the Integrated Delivery team and works across the Enteric and Diarrheal Diseases, Pneumonia, Malaria and Family Health Program Strategy Teams. The team works to improve access to effective treatment for sick children with a particular focus on three geographical areas: Burkina Faso, Nigeria and northern India. The cross-cutting approach of the initiative offers the opportunity to consider and implement solutions which contribute to the goals of several disease-specific strategy teams at once. 
+		</div>
+	</div>
+
+</div>
+
 
 </body>
 </html>

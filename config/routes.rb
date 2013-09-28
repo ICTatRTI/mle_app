@@ -1,4 +1,7 @@
 MleApp::Application.routes.draw do
+  resources :indicators
+
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
