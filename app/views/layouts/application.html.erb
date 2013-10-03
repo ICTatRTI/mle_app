@@ -28,12 +28,31 @@
             <li><%= link_to "Submit Survey" %></li>
             <li><%= link_to "Contact" %></li>
           </ul>
+          <ul class="nav pull-right">
+            <% if current_user %>
+              <li style="padding: 10px 15px"> 
+                Logged in as <%= current_user.email %> <%= link_to "Log out", log_out_path, {:style=>'display:inline;'} %>
+              </li>
+            <% else %>
+              <li>
+                <%= link_to "Log in", log_in_path %>
+              </li>
+            <% end %>
+          </ul>
         </div>
+       
       </div>
     </div>
   </div>
 	
 <div class="container">
+
+  <% flash.each do |name, msg| %>
+    <div class="alert alert-error">
+      <%= content_tag :div, msg, :id => "flash_#{name}" %>
+    </div>
+  <% end %>
+
 	<div class="row">
 		<div class="span9"><%= yield %></div>
 		<div class="span3">
