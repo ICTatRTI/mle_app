@@ -23,13 +23,16 @@
           <span class="icon-bar"></span>
         </a>
         <a class="brand" href="/">Gates MLE</a>
+        
         <div class="nav-collapse">
+          <% if current_user %>
           <ul class="nav">
             <li><%= link_to "Browse Indicators", indicators_path %></li>
             <li><%= link_to "Reports" %></li>
             <li><%= link_to "Submit Survey" %></li>
             <li><%= link_to "Contact" %></li>
           </ul>
+           <% end %>
           <ul class="nav pull-right">
             <% if current_user %>
               <li style="padding: 10px 15px"> 
@@ -58,7 +61,8 @@
           <h4 class="modal-title">Login</h4>
         </div>
         <div class="modal-body">
-          <%= form_tag sessions_path do %>
+             
+          <%= form_tag sessions_path  do %>
             <p>
               <%= label_tag :email %><br />
               <%= text_field_tag :email, params[:email] %>
@@ -71,17 +75,12 @@
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
-          <%= button_to  "Log in" , sessions_path, class: "btn btn-primary" %>
+          <button type="button" class="btn btn-primary ">Login</button>
         </div>
       </div><!-- /.modal-content -->
     </div><!-- /.modal-dialog -->
   </div><!-- /.modal -->
 
-  <% flash.each do |name, msg| %>
-    <div class="alert alert-error">
-      <%= content_tag :div, msg, :id => "flash_#{name}" %>
-    </div>
-  <% end %>
 
 	<div class="row">
 		<div class="span9"><%= yield %></div>
