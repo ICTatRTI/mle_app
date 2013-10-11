@@ -2,3 +2,13 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+body .modal {
+    /* new custom width */
+    width: 360px;
+    /* must be half of the width, minus scrollbar on the left (30px) */
+    margin-left: -210px;
+}
+
+.hide {
+	display: none;
+}

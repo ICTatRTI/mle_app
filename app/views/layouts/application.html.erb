@@ -61,6 +61,8 @@
           <h4 class="modal-title">Login</h4>
         </div>
         <div class="modal-body">
+
+          <div id="login-message" class="alert alert-danger hide"></div>
              
           <%= form_tag sessions_path  do %>
             <p>
@@ -75,7 +77,7 @@
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
-          <button type="button" class="btn btn-primary ">Login</button>
+          <button id="login-button" type="button" class="btn btn-primary ">Login</button>
         </div>
       </div><!-- /.modal-content -->
     </div><!-- /.modal-dialog -->

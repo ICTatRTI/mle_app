@@ -4,5 +4,13 @@
 
 
 $ ->
+	$("#login-button").click ->
+		$.ajax '/sessions',
+            type: 'POST'
+            data: { email: $("#email").val() ,password: $("#password").val()  }
+            error: (jqXHR, textStatus, errorThrown) ->
+                console.log "Response: " + textStatus
+                $("#login-message").show()
+                $("#login-message").append("Invalid username or password")
 
-
+               
