@@ -12,3 +12,7 @@ body .modal {
 .hide {
 	display: none;
 }
+
+.modal-backdrop, .modal-backdrop.fade.in {
+    opacity: 0.5;
+}

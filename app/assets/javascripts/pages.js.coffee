@@ -12,5 +12,21 @@ $ ->
                 console.log "Response: " + textStatus
                 $("#login-message").show()
                 $("#login-message").append("Invalid username or password")
+            success: (data, textStatus, jqXHR) ->
+                console.log "Logged in"   
+                $("#login-modal").modal("hide")
 
-               
+
+        
+
+
+
+
+
+
+
+
+
+    
+
+

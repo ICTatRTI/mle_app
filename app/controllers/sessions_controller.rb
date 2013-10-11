@@ -6,9 +6,9 @@ class SessionsController < ApplicationController
     user = User.authenticate(params[:email], params[:password])
     if user
       session[:user_id] = user.id
-      redirect_to root_url
+      render js: %(window.location.href='#{root_url}')
     else
-      render status: 401
+      head :unauthorized
     end
   end
   
