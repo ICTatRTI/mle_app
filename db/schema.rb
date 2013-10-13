@@ -17,8 +17,8 @@ ActiveRecord::Schema.define(:version => 20131013201655) do
     t.string   "name"
     t.datetime "created_at", :null => false
     t.datetime "updated_at", :null => false
-    t.string   "definition"
-    t.string   "metric"
+    t.text     "definition"
+    t.text     "metric"
   end
 
   create_table "users", :force => true do |t|
