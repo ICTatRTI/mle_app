@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Gates MLE</title>
+   <!--[if lt IE 9]>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js" type="text/javascript"></script>
+  <![endif]-->
+  <%= stylesheet_link_tag    "application", :media => "all" %>
+  <%= javascript_include_tag "application" %>
+  <%= csrf_meta_tags %>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<%= favicon_link_tag 'favicon.ico' %>
+</head>
+<body>
+
+
+<div class="navbar navbar-fixed-top">
+    <div class="navbar-inner">
+      <div class="container">
+        <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </a>
+        <a class="brand" href="/">Gates MLE</a>
+        
+        <div class="nav-collapse">
+          <% if current_user %>
+          <ul class="nav">
+            <li><%= link_to "Browse Indicators", indicators_path %></li>
+            <li><%= link_to "Reports", reports_url %></li>
+            <li><%= link_to "Submit Survey" %></li>
+            <li><%= link_to "Nigeria Country Profile", nigeria_url %></li>
+          </ul>
+           <% end %>
+          <ul class="nav pull-right">
+            <% if current_user %>
+              <li style="padding: 10px 15px"> 
+                Logged in as <%= current_user.email %> <%= link_to "Log out", log_out_path, {:style=>'display:inline;'} %>
+              </li>
+            <% else %>
+              <li>
+                <a data-toggle="modal" href="#login-modal" >Login</a>
+              </li>
+            <% end %>
+          </ul>
+        </div>
+       
+      </div>
+    </div>
+  </div>
+	
+<div class="container">
+
+  <!-- Modal -->
+  <div class="modal hide fade" id="login-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" >
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+          <h4 class="modal-title">Login</h4>
+        </div>
+        <div class="modal-body">
+
+          <div id="login-message" class="alert alert-danger hide"></div>
+             
+          <%= form_tag sessions_path  do %>
+            <p>
+              <%= label_tag :email %><br />
+              <%= text_field_tag :email, params[:email] %>
+            </p>
+            <p>
+              <%= label_tag :password %><br />
+              <%= password_field_tag :password %>
+            </p>
+          <% end %>
+        </div>
+        <div class="modal-footer">
+          <button id="login-button" type="button" class="btn btn-primary ">Login</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+	
+
+</div>
+
+
+</body>
+</html>
