@@ -3,3 +3,5 @@
 
 en:
   hello: "Hello world"
+  create_user: "Create User"
+  sign_up_title: "Sign up"

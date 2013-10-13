@@ -15,6 +15,7 @@ $ ->
             success: (data, textStatus, jqXHR) ->
                 console.log "Logged in"   
                 $("#login-modal").modal("hide")
+                window.location.replace(window.location.href);
 
 
         

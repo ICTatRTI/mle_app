@@ -1,4 +1,4 @@
-<h1>Sign Up</h1>
+<h1><h1><%= t(:sign_up_title) %></h1></h1>
 
 <%= form_for @user do |f| %>
   <% if @user.errors.any? %>
@@ -23,5 +23,6 @@
     <%= f.label :password_confirmation %><br />
     <%= f.password_field :password_confirmation %>
   </p>
-  <p class="button"><%= f.submit %></p>
+  <%= submit_tag t(:create_user), :class => "btn btn-primary" %>
+
 <% end %>
