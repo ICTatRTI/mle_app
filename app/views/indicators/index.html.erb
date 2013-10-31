@@ -5,17 +5,17 @@
 <table class="table table-striped">
   <thead>
     <tr>
-      <th><%= model_class.human_attribute_name(:id) %></th>
       <th><%= model_class.human_attribute_name(:name) %></th>
-      <th><%= model_class.human_attribute_name(:updated_at) %></th>
+      <th><%= model_class.human_attribute_name(:name) %></th>
+      <th><%= model_class.human_attribute_name(:name) %></th>
     </tr>
   </thead>
   <tbody>
     <% @indicators.each do |indicator| %>
       <tr>
-        <td><%= link_to indicator.id, indicator_path(indicator) %></td>
-        <td><%= indicator.name %></td>
-        <td><%=l indicator.updated_at %></td>
+        <td width="30%"><%= link_to indicator.name, indicator_path(indicator) %></td>
+        <td><%= indicator.condition.name %></td>
+        <td><%= indicator.survey_method.name %></td>
         
       </tr>
     <% end %>

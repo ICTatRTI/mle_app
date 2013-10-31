@@ -11,14 +11,33 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20131013201655) do
+ActiveRecord::Schema.define(:version => 20131030192308) do
+
+  create_table "conditions", :force => true do |t|
+    t.string   "name"
+    t.text     "description"
+    t.datetime "created_at",  :null => false
+    t.datetime "updated_at",  :null => false
+  end
 
   create_table "indicators", :force => true do |t|
     t.string   "name"
-    t.datetime "created_at", :null => false
-    t.datetime "updated_at", :null => false
+    t.datetime "created_at",       :null => false
+    t.datetime "updated_at",       :null => false
     t.text     "definition"
     t.text     "metric"
+    t.integer  "condition_id"
+    t.integer  "survey_method_id"
+  end
+
+  add_index "indicators", ["condition_id"], :name => "index_indicators_on_condition_id"
+  add_index "indicators", ["survey_method_id"], :name => "index_indicators_on_survey_method_id"
+
+  create_table "survey_methods", :force => true do |t|
+    t.string   "name"
+    t.text     "description"
+    t.datetime "created_at",  :null => false
+    t.datetime "updated_at",  :null => false
   end
 
   create_table "users", :force => true do |t|
