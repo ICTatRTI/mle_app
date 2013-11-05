@@ -14,6 +14,7 @@ MleApp::Application.routes.draw do
 
   get 'nigeria', to: "pages#nigeria_profile"
   get 'reports', to: "pages#reports"
+  get 'baseline_survey', to: "pages#baseline_survey"
   
   resources :sessions
 
