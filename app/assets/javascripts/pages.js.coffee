@@ -4,17 +4,17 @@
 
 
 $ ->
-	$("#login-button").click ->
-		$.ajax '/sessions',
+	jQuery("#login-button").click ->
+		jQuery.ajax '/sessions',
             type: 'POST'
-            data: { email: $("#email").val() ,password: $("#password").val()  }
+            data: { email: jQuery("#email").val() ,password: jQuery("#password").val()  }
             error: (jqXHR, textStatus, errorThrown) ->
                 console.log "Response: " + textStatus
-                $("#login-message").show()
-                $("#login-message").append("Invalid username or password")
+                jQuery("#login-message").show()
+                jQuery("#login-message").append("Invalid username or password")
             success: (data, textStatus, jqXHR) ->
                 console.log "Logged in"   
-                $("#login-modal").modal("hide")
+                jQuery("#login-modal").modal("hide")
                 window.location.replace(window.location.href);
 
 
