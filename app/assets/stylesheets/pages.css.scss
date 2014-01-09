@@ -17,25 +17,92 @@ body .modal {
     opacity: 0.5;
 }
 
-div.verticleColumn {
-	float: left;
+.vertical {
+    writing-mode:tb-rl;
+    -webkit-transform:rotate(270deg);
+    -moz-transform:rotate(270deg);
+    -o-transform: rotate(270deg);
+    white-space:nowrap;
+    display:block;
+    bottom:0;
+    width:20px;
+    height:20px;
+
 }
 
-div.window {
-	width: 190px;
+div.verticleColumn {
+    float: left;
+    margin-left: 10px;
+    margin-right: 10px;
 }
+
 
 .window {
-    background-color: #EEEEEF;
+    width: 190px;
     border: 1px solid #346789;
     border-radius: 0.5em;
     box-shadow: 2px 2px 5px #AAAAAA;
     color: #000000;
     height: 5em;
-    width: 5em;
     margin: 5px;
 }
 .window:hover {
     box-shadow: 2px 2px 19px #AAAAAA;
     cursor: pointer;
+}
+
+#mainPanel { 
+    text-align: center;
+}
+
+div.activities {
+    background-color: #F6F7CB;
+}
+
+div.functions {
+    background-color: #EEEDFC;
+}
+
+div.outputs {
+    background-color: #E8FAED;
+}
+
+div.outcomes {
+    background-color: #C2DEFC;
+}
+
+div.goals {
+    background-color: #FCEAC2;
+}
+
+#chartWindow20{ 
+    height: 530px;
+}
+
+#chartWindow22{ 
+    height: 600px;
+}
+
+#chartWindow24{ 
+    height: 300px;
+}
+
+#chartWindow17{ 
+    height: 150px;
+}
+
+#chartWindow24{ 
+    height: 600px;
+}
+
+#horizontal {
+    clear:both;
+    height: 65px;
+    border: 1px solid #346789;
+    border-radius: 0.5em;
+    box-shadow: 2px 2px 5px #AAAAAA;
+    color: #000000;
+    margin: 5px;
+    background-color: #FFD4DF;
+
 }
