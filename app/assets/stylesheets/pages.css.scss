@@ -16,3 +16,26 @@ body .modal {
 .modal-backdrop, .modal-backdrop.fade.in {
     opacity: 0.5;
 }
+
+div.verticleColumn {
+	float: left;
+}
+
+div.window {
+	width: 190px;
+}
+
+.window {
+    background-color: #EEEEEF;
+    border: 1px solid #346789;
+    border-radius: 0.5em;
+    box-shadow: 2px 2px 5px #AAAAAA;
+    color: #000000;
+    height: 5em;
+    width: 5em;
+    margin: 5px;
+}
+.window:hover {
+    box-shadow: 2px 2px 19px #AAAAAA;
+    cursor: pointer;
+}

@@ -17,6 +17,9 @@ $ ->
                 jQuery("#login-modal").modal("hide")
                 window.location.replace(window.location.href);
 
+    
+
+
 
         
 

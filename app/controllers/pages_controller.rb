@@ -11,4 +11,12 @@ class PagesController < ApplicationController
   def reports
   end
 
+  def dashboard
+
+  	respond_to do |format|
+      format.html {render :layout => 'authenticated'}
+    end
+
+  end
+
 end
