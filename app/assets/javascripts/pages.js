@@ -13,10 +13,10 @@ jsPlumb.ready(function() {
 		var instance = jsPlumb.getInstance({
 			// notice the 'curviness' argument to this Bezier curve.  the curves on this page are far smoother
 			// than the curves on the first demo, which use the default curviness value.			
-			Connector : [ "Bezier", { curviness:50 } ],
+			Connector : [ "Bezier", { curviness:30 } ],
 			DragOptions : { cursor: "pointer", zIndex:2000 },
 			PaintStyle : { strokeStyle:color, lineWidth:2 },
-			
+
 			EndpointStyle : { radius:9, fillStyle:color },
 			HoverPaintStyle : {strokeStyle:"#ec9f2e" },
 			EndpointHoverStyle : {fillStyle:"#ec9f2e" },
@@ -148,5 +148,118 @@ jsPlumb.ready(function() {
 				});
 
     instance.connect({uuids:["chartWindow7-right", "chartWindow17-left"]});
+
+
+
+    var chartWindow22 = jsPlumb.getSelector("#chartWindow22");
+    instance.addEndpoint(chartWindow22, {
+					uuid:"chartWindow22-right",
+					anchor:"Right",
+					maxConnections:-1
+				});
+
+    var chartWindow24 = jsPlumb.getSelector("#chartWindow24");
+    instance.addEndpoint(chartWindow24, {
+					uuid:"chartWindow24-left",
+					anchor:"Left",
+					maxConnections:-1
+				});
+
+    instance.connect({uuids:["chartWindow22-right", "chartWindow24-left"]});
+
+
+     var chartWindow19 = jsPlumb.getSelector("#chartWindow19");
+    instance.addEndpoint(chartWindow19, {
+					uuid:"chartWindow19-left",
+					anchor:"Left",
+					maxConnections:-1
+				});
+
+    instance.addEndpoint(chartWindow11, {
+					uuid:"chartWindow11-right",
+					anchor:"Right",
+					maxConnections:-1
+				});
+
+    instance.addEndpoint(chartWindow12, {
+					uuid:"chartWindow12-right",
+					anchor:"Right",
+					maxConnections:-1
+				});
+
+    instance.addEndpoint(chartWindow13, {
+					uuid:"chartWindow13-right",
+					anchor:"Right",
+					maxConnections:-1
+				});
+
+    instance.connect({uuids:["chartWindow11-right", "chartWindow19-left"]});
+    instance.connect({uuids:["chartWindow12-right", "chartWindow19-left"]});
+    instance.connect({uuids:["chartWindow13-right", "chartWindow19-left"]});
+
+
+     var chartWindow20 = jsPlumb.getSelector("#chartWindow20");
+     instance.addEndpoint(chartWindow20, {
+					uuid:"chartWindow20-left",
+					anchor:"Left",
+					maxConnections:-1
+				});
+
+     instance.connect({uuids:["chartWindow12-right", "chartWindow20-left"]});
+     instance.connect({uuids:["chartWindow13-right", "chartWindow20-left"]});
+
+
+    instance.addEndpoint(chartWindow14, {
+					uuid:"chartWindow14-right",
+					anchor:"Right",
+					maxConnections:-1
+				});
+
+    instance.addEndpoint(chartWindow15, {
+					uuid:"chartWindow15-right",
+					anchor:"Right",
+					maxConnections:-1
+				});
+
+    instance.addEndpoint(chartWindow16, {
+					uuid:"chartWindow16-right",
+					anchor:"Right",
+					maxConnections:-1
+				});
+
+    instance.addEndpoint(chartWindow17, {
+					uuid:"chartWindow17-right",
+					anchor:"Right",
+					maxConnections:-1
+				});
+
+
+ instance.connect({uuids:["chartWindow14-right", "chartWindow20-left"]});
+ instance.connect({uuids:["chartWindow15-right", "chartWindow20-left"]});
+ instance.connect({uuids:["chartWindow16-right", "chartWindow20-left"]});
+ instance.connect({uuids:["chartWindow17-right", "chartWindow20-left"]});
+
+
+ instance.addEndpoint(chartWindow19, {
+					uuid:"chartWindow19-right",
+					anchor:"Right",
+					maxConnections:-1
+				});
+
+ instance.addEndpoint(chartWindow20, {
+					uuid:"chartWindow20-right",
+					anchor:"Right",
+					maxConnections:-1
+				});
+
+ instance.addEndpoint(chartWindow22, {
+					uuid:"chartWindow22-left",
+					anchor:"Left",
+					maxConnections:-1
+				});
+
+ instance.connect({uuids:["chartWindow19-right", "chartWindow22-left"]});
+ instance.connect({uuids:["chartWindow20-right", "chartWindow22-left"]});
+
 
 });
