@@ -1,5 +1,6 @@
 MleApp::Application.routes.draw do
 
+  get "dashboard/new"
   get "sessions/new"
 
   get "pages/home"
@@ -14,9 +15,14 @@ MleApp::Application.routes.draw do
 
   get 'nigeria', to: "pages#nigeria_profile"
   get 'reports', to: "pages#reports"
-  get 'dashboard', to: "pages#dashboard"
-  get 'baseline_survey', to: "pages#baseline_survey"
   
+  get 'baseline_survey', to: "pages#baseline_survey"
+
+  # Dashboard stuff
+  get 'behavior', to: "dashboard#behavior"
+  
+  get 'dashboard', to: "dashboard#main"
+
   resources :sessions
 
 end

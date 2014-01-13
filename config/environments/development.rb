@@ -8,7 +8,7 @@ MleApp::Application.configure do
 
   config.assets.prefix = "/dev-assets"
   config.assets.initialize_on_precompile = false
-  config.assets.debug = false
+  config.assets.debug = true
 
   # Show full error reports and disable caching
   config.consider_all_requests_local       = true
@@ -27,8 +27,7 @@ MleApp::Application.configure do
   # Do not compress assets
   config.assets.compress = false
 
-  # Expands the lines which load the assets
-  config.assets.debug = true
+
 
   config.eager_load = false
 end
