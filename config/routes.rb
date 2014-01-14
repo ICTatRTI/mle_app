@@ -19,7 +19,7 @@ MleApp::Application.routes.draw do
   get 'baseline_survey', to: "pages#baseline_survey"
 
   # Dashboard stuff
-  get 'behavior', to: "dashboard#behavior"
+  get 'behavior', to: "pages#behavior"
   
   get 'dashboard', to: "dashboard#main"
 
