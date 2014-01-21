@@ -663,5 +663,236 @@
 
 	 });
 
+
+	 //  Outputs
+	 // Prompt Care Seeking
+	 $( "#chartWindow19").mouseover(function() {
+	 	$( "#chartWindow19" ).removeClass( "outputs" ).addClass( "orange" );
+	 	$( "#chartWindow11" ).removeClass( "functions" ).addClass( "orange" );
+	 	$( "#chartWindow12" ).removeClass( "functions" ).addClass( "orange" );
+	 	$( "#chartWindow13" ).removeClass( "functions" ).addClass( "orange" );
+	 	$( "#chartWindow2" ).removeClass( "activities" ).addClass( "orange" );
+	 	$( "#chartWindow3" ).removeClass( "activities" ).addClass( "orange" );
+	 	$( "#chartWindow22" ).removeClass( "outcomes" ).addClass( "orange" );
+	 	$( "#chartWindow24" ).removeClass( "goals" ).addClass( "orange" );
+
+	 	instance.select({source:"chartWindow19"}).setHover(true);
+		instance.select({target:"chartWindow19"}).setHover(true);
+		instance.select({target:"chartWindow11"}).setHover(true);
+		instance.select({target:"chartWindow12"}).setHover(true);
+		instance.select({target:"chartWindow13"}).setHover(true);
+		instance.select({source:"chartWindow22"}).setHover(true);
+
+	 });
+	 $( "#chartWindow19" ).mouseout(function() {
+	 	$( "#chartWindow19" ).removeClass( "orange" ).addClass( "outputs" );
+	 	$( "#chartWindow11" ).removeClass( "orange" ).addClass( "functions" );
+	 	$( "#chartWindow12" ).removeClass( "orange" ).addClass( "functions" );
+	 	$( "#chartWindow13" ).removeClass( "orange" ).addClass( "functions" );
+	 	$( "#chartWindow2" ).removeClass( "orange" ).addClass( "activities" );
+	 	$( "#chartWindow3" ).removeClass( "orange" ).addClass( "activities" );
+	 	$( "#chartWindow22" ).removeClass( "orange" ).addClass( "outcomes" );
+	 	$( "#chartWindow24" ).removeClass( "orange" ).addClass( "goals" );
+
+	 	instance.select({source:"chartWindow19"}).setHover(false);
+		instance.select({target:"chartWindow19"}).setHover(false);
+		instance.select({target:"chartWindow11"}).setHover(false);
+		instance.select({target:"chartWindow12"}).setHover(false);
+		instance.select({target:"chartWindow13"}).setHover(false);
+		instance.select({source:"chartWindow22"}).setHover(false);
+
+	 });
+
+	 //  Availabilty of Quality Care
+	 $( "#chartWindow20").mouseover(function() {
+		$( "#chartWindow20" ).removeClass( "outputs" ).addClass( "orange" );
+		$( "#chartWindow12" ).removeClass( "functions" ).addClass( "orange" );
+		$( "#chartWindow13" ).removeClass( "functions" ).addClass( "orange" );
+		$( "#chartWindow14" ).removeClass( "functions" ).addClass( "orange" );
+		$( "#chartWindow15" ).removeClass( "functions" ).addClass( "orange" );
+		$( "#chartWindow16" ).removeClass( "functions" ).addClass( "orange" );
+		$( "#chartWindow17" ).removeClass( "functions" ).addClass( "orange" );
+		$( "#chartWindow3" ).removeClass( "activities" ).addClass( "orange" );
+		$( "#chartWindow4" ).removeClass( "activities" ).addClass( "orange" );
+		$( "#chartWindow5" ).removeClass( "activities" ).addClass( "orange" );
+		$( "#chartWindow6" ).removeClass( "activities" ).addClass( "orange" );
+		$( "#chartWindow7" ).removeClass( "activities" ).addClass( "orange" );
+		$( "#chartWindow22" ).removeClass( "outcomes" ).addClass( "orange" );
+	 	$( "#chartWindow24" ).removeClass( "goals" ).addClass( "orange" );
+
+	 	instance.select({source:"chartWindow20"}).setHover(true);
+		instance.select({target:"chartWindow20"}).setHover(true);
+		instance.select({target:"chartWindow12"}).setHover(true);
+		instance.select({target:"chartWindow13"}).setHover(true);
+		instance.select({target:"chartWindow14"}).setHover(true);
+		instance.select({target:"chartWindow15"}).setHover(true);
+		instance.select({target:"chartWindow16"}).setHover(true);
+		instance.select({target:"chartWindow17"}).setHover(true);
+		instance.select({source:"chartWindow22"}).setHover(true);
+
+	 });
+	 $( "#chartWindow20" ).mouseout(function() {
+		$( "#chartWindow20" ).removeClass( "orange" ).addClass( "outputs" );
+		$( "#chartWindow12" ).removeClass( "orange" ).addClass( "functions" );
+	 	$( "#chartWindow13" ).removeClass( "orange" ).addClass( "functions" );
+		$( "#chartWindow14" ).removeClass( "orange" ).addClass( "functions" );
+		$( "#chartWindow15" ).removeClass( "orange" ).addClass( "functions" );
+		$( "#chartWindow16" ).removeClass( "orange" ).addClass( "functions" );
+		$( "#chartWindow17" ).removeClass( "orange" ).addClass( "functions" );
+		$( "#chartWindow3" ).removeClass( "orange" ).addClass( "activities" );
+		$( "#chartWindow4" ).removeClass( "orange" ).addClass( "activities" );
+		$( "#chartWindow5" ).removeClass( "orange" ).addClass( "activities" );
+		$( "#chartWindow6" ).removeClass( "orange" ).addClass( "activities" );
+		$( "#chartWindow7" ).removeClass( "orange" ).addClass( "activities" );
+		$( "#chartWindow22" ).removeClass( "orange" ).addClass( "outcomes" );
+	 	$( "#chartWindow24" ).removeClass( "orange" ).addClass( "goals" );
+
+	 	instance.select({source:"chartWindow20"}).setHover(false);
+		instance.select({target:"chartWindow20"}).setHover(false);
+		instance.select({target:"chartWindow12"}).setHover(false);
+		instance.select({target:"chartWindow13"}).setHover(false);
+		instance.select({target:"chartWindow14"}).setHover(false);
+		instance.select({target:"chartWindow15"}).setHover(false);
+		instance.select({target:"chartWindow16"}).setHover(false);
+		instance.select({target:"chartWindow17"}).setHover(false);
+		instance.select({source:"chartWindow22"}).setHover(false);
+
+	 });
+
+
+	 // Outcomes
+	 $( "#chartWindow22").mouseover(function() {
+	 	$( "#chartWindow22" ).removeClass( "outcomes" ).addClass( "orange" );
+	 	$( "#chartWindow11" ).removeClass( "functions" ).addClass( "orange" );
+	 	$( "#chartWindow12" ).removeClass( "functions" ).addClass( "orange" );
+	 	$( "#chartWindow13" ).removeClass( "functions" ).addClass( "orange" );
+	 	$( "#chartWindow14" ).removeClass( "functions" ).addClass( "orange" );
+	 	$( "#chartWindow15" ).removeClass( "functions" ).addClass( "orange" );
+	 	$( "#chartWindow16" ).removeClass( "functions" ).addClass( "orange" );
+		$( "#chartWindow17" ).removeClass( "functions" ).addClass( "orange" );
+		$( "#chartWindow19" ).removeClass( "outputs" ).addClass( "orange" );
+	 	$( "#chartWindow20" ).removeClass( "outputs" ).addClass( "orange" );
+	 	$( "#chartWindow2" ).removeClass( "activities" ).addClass( "orange" );
+	 	$( "#chartWindow3" ).removeClass( "activities" ).addClass( "orange" );
+	 	$( "#chartWindow4" ).removeClass( "activities" ).addClass( "orange" );
+	 	$( "#chartWindow5" ).removeClass( "activities" ).addClass( "orange" );
+	 	$( "#chartWindow6" ).removeClass( "activities" ).addClass( "orange" );
+	 	$( "#chartWindow7" ).removeClass( "activities" ).addClass( "orange" );
+	 	$( "#chartWindow24" ).removeClass( "goals" ).addClass( "orange" );
+
+	 	instance.select({source:"chartWindow22"}).setHover(true);
+		instance.select({target:"chartWindow22"}).setHover(true);
+		instance.select({target:"chartWindow19"}).setHover(true);
+		instance.select({target:"chartWindow20"}).setHover(true);
+		instance.select({target:"chartWindow11"}).setHover(true);
+		instance.select({target:"chartWindow12"}).setHover(true);
+		instance.select({target:"chartWindow13"}).setHover(true);
+		instance.select({target:"chartWindow14"}).setHover(true);
+		instance.select({target:"chartWindow15"}).setHover(true);
+		instance.select({target:"chartWindow16"}).setHover(true);
+		instance.select({target:"chartWindow17"}).setHover(true);
+
+	 	
+	 });
+	 $( "#chartWindow22" ).mouseout(function() {
+	 	$( "#chartWindow22" ).removeClass( "orange" ).addClass( "outcomes" );
+	 	$( "#chartWindow11" ).removeClass( "orange" ).addClass( "functions" );
+	 	$( "#chartWindow12" ).removeClass( "orange" ).addClass( "functions" );
+	 	$( "#chartWindow13" ).removeClass( "orange" ).addClass( "functions" );
+	 	$( "#chartWindow14" ).removeClass( "orange" ).addClass( "functions" );
+	 	$( "#chartWindow15" ).removeClass( "orange" ).addClass( "functions" );
+	 	$( "#chartWindow16" ).removeClass( "orange" ).addClass( "functions" );
+		$( "#chartWindow17" ).removeClass( "orange" ).addClass( "functions" );
+		$( "#chartWindow19" ).removeClass( "orange" ).addClass( "outputs" );
+	 	$( "#chartWindow20" ).removeClass( "orange" ).addClass( "outputs" );
+	 	$( "#chartWindow2" ).removeClass( "orange" ).addClass( "activities" );
+	 	$( "#chartWindow3" ).removeClass( "orange" ).addClass( "activities" );
+	 	$( "#chartWindow4" ).removeClass( "orange" ).addClass( "activities" );
+	 	$( "#chartWindow5" ).removeClass( "orange" ).addClass( "activities" );
+	 	$( "#chartWindow6" ).removeClass( "orange" ).addClass( "activities" );
+	 	$( "#chartWindow7" ).removeClass( "orange" ).addClass( "activities" );
+	 	$( "#chartWindow24" ).removeClass( "orange" ).addClass( "goals" );
+
+	 	instance.select({source:"chartWindow22"}).setHover(false);
+		instance.select({target:"chartWindow22"}).setHover(false);
+		instance.select({target:"chartWindow19"}).setHover(false);
+		instance.select({target:"chartWindow20"}).setHover(false);
+		instance.select({target:"chartWindow11"}).setHover(false);
+		instance.select({target:"chartWindow12"}).setHover(false);
+		instance.select({target:"chartWindow13"}).setHover(false);
+		instance.select({target:"chartWindow14"}).setHover(false);
+		instance.select({target:"chartWindow15"}).setHover(false);
+		instance.select({target:"chartWindow16"}).setHover(false);
+		instance.select({target:"chartWindow17"}).setHover(false);
+	 	
+	 });
+
+	 // Goals
+	 $( "#chartWindow24").mouseover(function() {
+	 	$( "#chartWindow24" ).removeClass( "goals" ).addClass( "orange" );
+	 	$( "#chartWindow22" ).removeClass( "outcomes" ).addClass( "orange" );
+	 	$( "#chartWindow11" ).removeClass( "functions" ).addClass( "orange" );
+	 	$( "#chartWindow12" ).removeClass( "functions" ).addClass( "orange" );
+	 	$( "#chartWindow13" ).removeClass( "functions" ).addClass( "orange" );
+	 	$( "#chartWindow14" ).removeClass( "functions" ).addClass( "orange" );
+	 	$( "#chartWindow15" ).removeClass( "functions" ).addClass( "orange" );
+	 	$( "#chartWindow16" ).removeClass( "functions" ).addClass( "orange" );
+		$( "#chartWindow17" ).removeClass( "functions" ).addClass( "orange" );
+		$( "#chartWindow19" ).removeClass( "outputs" ).addClass( "orange" );
+	 	$( "#chartWindow20" ).removeClass( "outputs" ).addClass( "orange" );
+	 	$( "#chartWindow2" ).removeClass( "activities" ).addClass( "orange" );
+	 	$( "#chartWindow3" ).removeClass( "activities" ).addClass( "orange" );
+	 	$( "#chartWindow4" ).removeClass( "activities" ).addClass( "orange" );
+	 	$( "#chartWindow5" ).removeClass( "activities" ).addClass( "orange" );
+	 	$( "#chartWindow6" ).removeClass( "activities" ).addClass( "orange" );
+	 	$( "#chartWindow7" ).removeClass( "activities" ).addClass( "orange" );
+
+	 	instance.select({source:"chartWindow22"}).setHover(true);
+		instance.select({target:"chartWindow22"}).setHover(true);
+		instance.select({target:"chartWindow19"}).setHover(true);
+		instance.select({target:"chartWindow20"}).setHover(true);
+		instance.select({target:"chartWindow11"}).setHover(true);
+		instance.select({target:"chartWindow12"}).setHover(true);
+		instance.select({target:"chartWindow13"}).setHover(true);
+		instance.select({target:"chartWindow14"}).setHover(true);
+		instance.select({target:"chartWindow15"}).setHover(true);
+		instance.select({target:"chartWindow16"}).setHover(true);
+		instance.select({target:"chartWindow17"}).setHover(true);
+
+
+	 });
+	 $( "#chartWindow24" ).mouseout(function() {
+	 	$( "#chartWindow24" ).removeClass( "orange" ).addClass( "goals" );
+	 	$( "#chartWindow22" ).removeClass( "orange" ).addClass( "outcomes" );
+	 	$( "#chartWindow11" ).removeClass( "orange" ).addClass( "functions" );
+	 	$( "#chartWindow12" ).removeClass( "orange" ).addClass( "functions" );
+	 	$( "#chartWindow13" ).removeClass( "orange" ).addClass( "functions" );
+	 	$( "#chartWindow14" ).removeClass( "orange" ).addClass( "functions" );
+	 	$( "#chartWindow15" ).removeClass( "orange" ).addClass( "functions" );
+	 	$( "#chartWindow16" ).removeClass( "orange" ).addClass( "functions" );
+		$( "#chartWindow17" ).removeClass( "orange" ).addClass( "functions" );
+		$( "#chartWindow19" ).removeClass( "orange" ).addClass( "outputs" );
+	 	$( "#chartWindow20" ).removeClass( "orange" ).addClass( "outputs" );
+	 	$( "#chartWindow2" ).removeClass( "orange" ).addClass( "activities" );
+	 	$( "#chartWindow3" ).removeClass( "orange" ).addClass( "activities" );
+	 	$( "#chartWindow4" ).removeClass( "orange" ).addClass( "activities" );
+	 	$( "#chartWindow5" ).removeClass( "orange" ).addClass( "activities" );
+	 	$( "#chartWindow6" ).removeClass( "orange" ).addClass( "activities" );
+	 	$( "#chartWindow7" ).removeClass( "orange" ).addClass( "activities" );
+
+	 	instance.select({source:"chartWindow22"}).setHover(false);
+		instance.select({target:"chartWindow22"}).setHover(false);
+		instance.select({target:"chartWindow19"}).setHover(false);
+		instance.select({target:"chartWindow20"}).setHover(false);
+		instance.select({target:"chartWindow11"}).setHover(false);
+		instance.select({target:"chartWindow12"}).setHover(false);
+		instance.select({target:"chartWindow13"}).setHover(false);
+		instance.select({target:"chartWindow14"}).setHover(false);
+		instance.select({target:"chartWindow15"}).setHover(false);
+		instance.select({target:"chartWindow16"}).setHover(false);
+		instance.select({target:"chartWindow17"}).setHover(false);
+
+	 });
+
 });
 
