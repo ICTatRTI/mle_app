@@ -454,7 +454,214 @@
 		instance.select({source:"chartWindow22"}).setHover(false);
 	});
 
+	 // Functions
+	 // Community Knowledge
 
+	 $( "#chartWindow11").mouseover(function() {
+	 	$( "#chartWindow11" ).removeClass( "functions" ).addClass( "orange" );
+	 	$( "#chartWindow2" ).removeClass( "activities" ).addClass( "orange" );
+	 	$( "#chartWindow19" ).removeClass( "outputs" ).addClass( "orange" );
+		$( "#chartWindow22" ).removeClass( "outcomes" ).addClass( "orange" );
+		$( "#chartWindow24" ).removeClass( "goals" ).addClass( "orange" );
+
+		instance.select({source:"chartWindow11"}).setHover(true);
+		instance.select({source:"chartWindow2"}).setHover(true);
+		instance.select({source:"chartWindow19"}).setHover(true);
+		instance.select({source:"chartWindow22"}).setHover(true);
+
+	 });
+	 $( "#chartWindow11" ).mouseout(function() {
+	 	$( "#chartWindow11" ).removeClass( "orange" ).addClass( "functions" );
+	 	$( "#chartWindow2" ).removeClass( "orange" ).addClass( "activities" );
+	 	$( "#chartWindow19" ).removeClass( "orange" ).addClass( "outputs" );
+		$( "#chartWindow22" ).removeClass( "orange" ).addClass( "outcomes" );
+		$( "#chartWindow24" ).removeClass( "orange" ).addClass( "goals" );
+
+		instance.select({source:"chartWindow11"}).setHover(false);
+		instance.select({source:"chartWindow2"}).setHover(false);
+		instance.select({source:"chartWindow19"}).setHover(false);
+		instance.select({source:"chartWindow22"}).setHover(false);
+	 });	
+
+	 // Financing
+	 $( "#chartWindow12").mouseover(function() {
+	 	$( "#chartWindow12" ).removeClass( "functions" ).addClass( "orange" );
+	 	$( "#chartWindow3" ).removeClass( "activities" ).addClass( "orange" );
+	 	$( "#chartWindow19" ).removeClass( "outputs" ).addClass( "orange" );
+	 	$( "#chartWindow20" ).removeClass( "outputs" ).addClass( "orange" );
+	 	$( "#chartWindow22" ).removeClass( "outcomes" ).addClass( "orange" );
+	 	$( "#chartWindow24" ).removeClass( "goals" ).addClass( "orange" );
+
+	 	instance.select({source:"chartWindow12"}).setHover(true);
+		instance.select({target:"chartWindow12"}).setHover(true);
+		instance.select({source:"chartWindow19"}).setHover(true);
+		instance.select({source:"chartWindow20"}).setHover(true);
+		instance.select({source:"chartWindow22"}).setHover(true);
+	 });
+	 $( "#chartWindow12" ).mouseout(function() {
+		$( "#chartWindow12" ).removeClass( "orange" ).addClass( "functions" );
+		$( "#chartWindow3" ).removeClass( "orange" ).addClass( "activities" );
+	 	$( "#chartWindow19" ).removeClass( "orange" ).addClass( "outputs" );
+	 	$( "#chartWindow20" ).removeClass( "orange" ).addClass( "outputs" );
+	 	$( "#chartWindow22" ).removeClass( "orange" ).addClass( "outcomes" );
+	 	$( "#chartWindow24" ).removeClass( "orange" ).addClass( "goals" );
+
+	 	instance.select({source:"chartWindow12"}).setHover(false);
+		instance.select({target:"chartWindow12"}).setHover(false);
+		instance.select({source:"chartWindow19"}).setHover(false);
+		instance.select({source:"chartWindow20"}).setHover(false);
+		instance.select({source:"chartWindow22"}).setHover(false);
+	 });
+
+	 // Governance and leadership
+	 $( "#chartWindow13").mouseover(function() {
+	 	$( "#chartWindow13" ).removeClass( "functions" ).addClass( "orange" );
+	 	$( "#chartWindow3" ).removeClass( "activities" ).addClass( "orange" );
+	 	$( "#chartWindow19" ).removeClass( "outputs" ).addClass( "orange" );
+	 	$( "#chartWindow20" ).removeClass( "outputs" ).addClass( "orange" );
+	 	$( "#chartWindow22" ).removeClass( "outcomes" ).addClass( "orange" );
+	 	$( "#chartWindow24" ).removeClass( "goals" ).addClass( "orange" );
+
+	 	instance.select({source:"chartWindow13"}).setHover(true);
+		instance.select({target:"chartWindow13"}).setHover(true);
+		instance.select({source:"chartWindow19"}).setHover(true);
+		instance.select({source:"chartWindow20"}).setHover(true);
+		instance.select({source:"chartWindow22"}).setHover(true);
+	 });
+	 $( "#chartWindow13" ).mouseout(function() {
+	 	$( "#chartWindow13" ).removeClass( "orange" ).addClass( "functions" );
+	 	$( "#chartWindow3" ).removeClass( "orange" ).addClass( "activities" );
+	 	$( "#chartWindow19" ).removeClass( "orange" ).addClass( "outputs" );
+	 	$( "#chartWindow20" ).removeClass( "orange" ).addClass( "outputs" );
+	 	$( "#chartWindow22" ).removeClass( "orange" ).addClass( "outcomes" );
+	 	$( "#chartWindow24" ).removeClass( "orange" ).addClass( "goals" );
+
+	 	instance.select({source:"chartWindow13"}).setHover(false);
+		instance.select({target:"chartWindow13"}).setHover(false);
+		instance.select({source:"chartWindow19"}).setHover(false);
+		instance.select({source:"chartWindow20"}).setHover(false);
+		instance.select({source:"chartWindow22"}).setHover(false);
+	 });
+
+	 // Health information
+	 $( "#chartWindow14").mouseover(function() {
+	 	$( "#chartWindow14" ).removeClass( "functions" ).addClass( "orange" );
+	 	$( "#chartWindow3" ).removeClass( "activities" ).addClass( "orange" );
+	 	$( "#chartWindow4" ).removeClass( "activities" ).addClass( "orange" );
+	 	$( "#chartWindow5" ).removeClass( "activities" ).addClass( "orange" );
+	 	$( "#chartWindow20" ).removeClass( "outputs" ).addClass( "orange" );
+	 	$( "#chartWindow22" ).removeClass( "outcomes" ).addClass( "orange" );
+	 	$( "#chartWindow24" ).removeClass( "goals" ).addClass( "orange" );
+
+	 	instance.select({source:"chartWindow14"}).setHover(true);
+		instance.select({target:"chartWindow14"}).setHover(true);
+		instance.select({source:"chartWindow19"}).setHover(true);
+		instance.select({source:"chartWindow20"}).setHover(true);
+		instance.select({source:"chartWindow22"}).setHover(true);
+
+	 });
+	 $( "#chartWindow14" ).mouseout(function() {
+	 	$( "#chartWindow14" ).removeClass( "orange" ).addClass( "functions" );
+	 	$( "#chartWindow3" ).removeClass( "orange" ).addClass( "activities" );
+	 	$( "#chartWindow4" ).removeClass( "orange" ).addClass( "activities" );
+	 	$( "#chartWindow5" ).removeClass( "orange" ).addClass( "activities" );
+	 	$( "#chartWindow20" ).removeClass( "orange" ).addClass( "outputs" );
+	 	$( "#chartWindow22" ).removeClass( "orange" ).addClass( "outcomes" );
+	 	$( "#chartWindow24" ).removeClass( "orange" ).addClass( "goals" );
+
+	 	instance.select({source:"chartWindow14"}).setHover(false);
+		instance.select({target:"chartWindow14"}).setHover(false);
+		instance.select({source:"chartWindow19"}).setHover(false);
+		instance.select({source:"chartWindow20"}).setHover(false);
+		instance.select({source:"chartWindow22"}).setHover(false);
+
+	 });
+
+	 //Human resources - PUBLIC
+	 $( "#chartWindow15").mouseover(function() {
+	 	$( "#chartWindow15" ).removeClass( "functions" ).addClass( "orange" );
+	 	$( "#chartWindow4" ).removeClass( "activities" ).addClass( "orange" );
+	 	$( "#chartWindow5" ).removeClass( "activities" ).addClass( "orange" );
+	 	$( "#chartWindow20" ).removeClass( "outputs" ).addClass( "orange" );
+	 	$( "#chartWindow22" ).removeClass( "outcomes" ).addClass( "orange" );
+	 	$( "#chartWindow24" ).removeClass( "goals" ).addClass( "orange" );
+
+	 	instance.select({source:"chartWindow15"}).setHover(true);
+		instance.select({target:"chartWindow15"}).setHover(true);
+		instance.select({source:"chartWindow20"}).setHover(true);
+		instance.select({source:"chartWindow22"}).setHover(true);
+	 });
+	 $( "#chartWindow15" ).mouseout(function() {
+	 	$( "#chartWindow15" ).removeClass( "orange" ).addClass( "functions" );
+	 	$( "#chartWindow4" ).removeClass( "orange" ).addClass( "activities" );
+	 	$( "#chartWindow5" ).removeClass( "orange" ).addClass( "activities" );
+	 	$( "#chartWindow20" ).removeClass( "orange" ).addClass( "outputs" );
+	 	$( "#chartWindow22" ).removeClass( "orange" ).addClass( "outcomes" );
+	 	$( "#chartWindow24" ).removeClass( "orange" ).addClass( "goals" );
+
+	 	instance.select({source:"chartWindow15"}).setHover(false);
+		instance.select({target:"chartWindow15"}).setHover(false);
+		instance.select({source:"chartWindow20"}).setHover(false);
+		instance.select({source:"chartWindow22"}).setHover(false);
+	 });
+
+
+	 //Human resources - PRIVATE
+	 $( "#chartWindow16").mouseover(function() {
+	 	$( "#chartWindow16" ).removeClass( "functions" ).addClass( "orange" );
+	 	$( "#chartWindow5" ).removeClass( "activities" ).addClass( "orange" );
+	 	$( "#chartWindow20" ).removeClass( "outputs" ).addClass( "orange" );
+	 	$( "#chartWindow22" ).removeClass( "outcomes" ).addClass( "orange" );
+	 	$( "#chartWindow24" ).removeClass( "goals" ).addClass( "orange" );
+
+	 	instance.select({source:"chartWindow16"}).setHover(true);
+		instance.select({target:"chartWindow16"}).setHover(true);
+		instance.select({source:"chartWindow20"}).setHover(true);
+		instance.select({source:"chartWindow22"}).setHover(true);
+
+	 });
+	 $( "#chartWindow16" ).mouseout(function() {
+	 	$( "#chartWindow16" ).removeClass( "orange" ).addClass( "functions" );
+	 	$( "#chartWindow5" ).removeClass( "orange" ).addClass( "activities" );
+	 	$( "#chartWindow20" ).removeClass( "orange" ).addClass( "outputs" );
+	 	$( "#chartWindow22" ).removeClass( "orange" ).addClass( "outcomes" );
+	 	$( "#chartWindow24" ).removeClass( "orange" ).addClass( "goals" );
+
+	 	instance.select({source:"chartWindow16"}).setHover(false);
+		instance.select({target:"chartWindow16"}).setHover(false);
+		instance.select({source:"chartWindow20"}).setHover(false);
+		instance.select({source:"chartWindow22"}).setHover(false);
+	 });
+
+	 //Medicines equipment 
+	 $( "#chartWindow17").mouseover(function() {
+	 	$( "#chartWindow17" ).removeClass( "functions" ).addClass( "orange" );
+	 	$( "#chartWindow6" ).removeClass( "activities" ).addClass( "orange" );
+	 	$( "#chartWindow7" ).removeClass( "activities" ).addClass( "orange" );
+	 	$( "#chartWindow20" ).removeClass( "outputs" ).addClass( "orange" );
+	 	$( "#chartWindow22" ).removeClass( "outcomes" ).addClass( "orange" );
+	 	$( "#chartWindow24" ).removeClass( "goals" ).addClass( "orange" );
+
+	 	instance.select({source:"chartWindow17"}).setHover(true);
+		instance.select({target:"chartWindow17"}).setHover(true);
+		instance.select({source:"chartWindow20"}).setHover(true);
+		instance.select({source:"chartWindow22"}).setHover(true);
+
+	 });
+	 $( "#chartWindow17" ).mouseout(function() {
+	 	$( "#chartWindow17" ).removeClass( "orange" ).addClass( "functions" );
+	 	$( "#chartWindow6" ).removeClass( "orange" ).addClass( "activities" );
+	 	$( "#chartWindow7" ).removeClass( "orange" ).addClass( "activities" );
+	 	$( "#chartWindow20" ).removeClass( "orange" ).addClass( "outputs" );
+	 	$( "#chartWindow22" ).removeClass( "orange" ).addClass( "outcomes" );
+	 	$( "#chartWindow24" ).removeClass( "orange" ).addClass( "goals" );
+
+	 	instance.select({source:"chartWindow17"}).setHover(false);
+		instance.select({target:"chartWindow17"}).setHover(false);
+		instance.select({source:"chartWindow20"}).setHover(false);
+		instance.select({source:"chartWindow22"}).setHover(false);
+
+	 });
 
 });
 
