@@ -4,6 +4,17 @@
  
  jsPlumb.ready(function() {
 
+
+	 $( "#chartWindow2" ).click(function() {
+			window.location = '/behavior';
+	  });
+	 $( "#chartWindow11" ).click(function() {
+			window.location = '/community';
+	  });
+
+
+
+
     var color = "gray";
 
 		var instance = jsPlumb.getInstance({
@@ -284,9 +295,6 @@
 		instance.select({source:"chartWindow22"}).setHover(false);
 	});
 
-	 $( "#chartWindow2" ).click(function() {
-			window.location = '/behavior';
-	});
 
 	 // Coordination/collaboration
 	 $( "#chartWindow3" ).mouseover(function() {
