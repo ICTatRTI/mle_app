@@ -20,7 +20,7 @@ MleApp::Application.routes.draw do
 
   # Dashboard stuff
   get 'behavior', to: "pages#behavior"
-  get 'community', to: "pages#behavior"
+  get 'community', to: "pages#community"
   get 'nigeria/dashboard', to: "dashboard#main"
   
   get 'dashboard', to: "dashboard#main"

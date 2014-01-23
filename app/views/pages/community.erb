@@ -1,8 +1,134 @@
+
 <ol class="breadcrumb">
   <li><a href="/">Home</a> / </li>
-  <li><a href="/dashboard">Dashboard</a> / </li>
+  <li><a href="/nigeria">Nigeria</a> / </li>
+  <li><a href="/nigeria/dashboard">Dashboard</a> / </li>
   <li class="active">Community Empowered</li>
 </ol>
 
+<div class="page-header">
+  <h2>Community Empowered <small>preferences and empowerment</small></h2>
+</div>
 
-Hello
+
+<div id="pi2_div" style="width:200; height:150"></div>
+
+
+<script type="text/javascript">
+
+      // Load the Visualization API and the piechart package.
+      google.load('visualization', '1.0', {'packages':['corechart']});
+
+      // Set a callback to run when the Google Visualization API is loaded.
+      google.setOnLoadCallback(drawChart);
+
+      // Callback that creates and populates a data table,
+      // instantiates the pie chart, passes in the data and
+      // draws it.
+      function drawChart() {
+
+        // Create the data table.
+        var data = new google.visualization.DataTable();
+        data.addColumn('string', 'Disease');
+        data.addColumn('number', 'Percentage');
+        data.addRows([
+          ['Neonatal causes', 29],
+          ['Pneumonia', 17],
+          ['Malaria', 17],
+          ['Diarrhea', 11],
+          ['AIDS', 3],
+          ['Other', 23]
+        ]);
+
+        // Set chart options
+        var options = {'title':'Causes of deaths in childrn <5, Nigeria 2012',
+                       'width':400,
+                       'height':300,
+                   colors: ['#e0440e', '#e6693e', '#ec8f6e', '#f3b49f', '#f6c7b6'],
+                is3D: true};
+
+        // Instantiate and draw our chart, passing in some options.
+        var chart = new google.visualization.PieChart(document.getElementById('chart_div'));
+        chart.draw(data, options);
+      
+       var pi2_data = google.visualization.arrayToDataTable([
+          ['Region', '1990 DHS', '2003 DHS', '2007 MICS', '2008 DHS', '2011 MISC'],
+          ['Nigeria',  37,33, 41, 45, 40],
+          ['North Central',  0, 0, 59, 0, 65],
+          ['North West',  0, 0, 45, 0, 34]
+        ]);
+
+        var pi2_options = {
+          title: 'Percent children <5 with suspected pneumonia who were taken for treatment',
+          colors: ['#e0440e', '#e6693e', '#ec8f6e', '#f3b49f', '#f6c7b6']
+        };
+
+        var pi2_chart = new google.visualization.ColumnChart(document.getElementById('pi2_div'));
+        pi2_chart.draw(pi2_data, pi2_options);
+
+
+        var pi3_data = google.visualization.arrayToDataTable([
+          ['Region', '1990 DHS', '2003 DHS', '2007 MICS', '2008 DHS', '2011 MISC'],
+          ['Nigeria',  12,34, 18, 26, 26],
+          ['North Central',  0, 0, 0, 0, 28],
+          ['North West',  0, 0, 0, 0, 25]
+        ]);
+
+        var pi3_options = {
+          title: 'Percent children <5 with diarrhea who received ORS',
+          colors: ['#e0440e', '#e6693e', '#ec8f6e', '#f3b49f', '#f6c7b6']
+        };
+
+        var pi3_chart = new google.visualization.ColumnChart(document.getElementById('pi3_div'));
+        pi3_chart.draw(pi3_data, pi3_options);
+
+
+        var pi4_data = google.visualization.arrayToDataTable([
+          ['Category', '% children <5 taken for treatment'],
+          ['Total', 45],
+          ['Male',  44],
+          ['Female', 47],
+          ['Urban', 46],
+          ['Rural', 45],
+          ['Poorest Quintile', 32],
+          ['Second Quintile', 40],
+          ['Middle Quintile', 56],
+          ['Fourth Quintile', 63],
+          ['Richest Quintile', 66]
+        ]);
+
+        var pi4_options = {
+          title: 'Disparities in care seeking for pneumonia (% children <5 taken for treatment)',
+          colors: ['#e0440e', '#e6693e', '#ec8f6e', '#f3b49f', '#f6c7b6'],
+          legend: { position: 'none' }
+        };
+
+        var pi4_chart = new google.visualization.ColumnChart(document.getElementById('pi4_div'));
+        pi4_chart.draw(pi4_data, pi4_options);
+
+        var pi5_data = google.visualization.arrayToDataTable([
+          ['Category', '% children <5 taken for treatment'],
+          ['Total', 25],
+          ['Male',  25],
+          ['Female', 25],
+          ['Urban', 34],
+          ['Rural', 22],
+          ['Poorest Quintile', 17],
+          ['Second Quintile', 21],
+          ['Middle Quintile', 31],
+          ['Fourth Quintile', 34],
+          ['Richest Quintile', 43]
+        ]);
+
+        var pi5_options = {
+          title: 'Disparities  in % children under five who revieced ORT or increased fluids with continued feeding',
+          colors: ['#e0440e', '#e6693e', '#ec8f6e', '#f3b49f', '#f6c7b6'],
+          legend: { position: 'none' }
+        };
+
+        var pi5_chart = new google.visualization.ColumnChart(document.getElementById('pi5_div'));
+        pi5_chart.draw(pi5_data, pi5_options);
+
+	}
+
+  </script>
