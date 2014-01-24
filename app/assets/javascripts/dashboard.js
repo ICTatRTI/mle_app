@@ -682,7 +682,6 @@
 	 // Prompt Care Seeking
 	 $( "#chartWindow19").mouseover(function() {
 	 	$( "#chartWindow19" ).addClass( "orange" );
-	 	
 	 	$( "#chartWindow22" ).addClass( "orange" );
 	 	$( "#chartWindow24" ).addClass( "orange" );
 
@@ -697,7 +696,6 @@
 	 $( "#chartWindow19" ).mouseout(function() {
 	 	$( "#chartWindow19" ).removeClass( "orange" );
 	 	$( "#chartWindow11" ).removeClass( "orange" );
-	 	
 	 	$( "#chartWindow22" ).removeClass( "orange" );
 	 	$( "#chartWindow24" ).removeClass( "orange" );
 
