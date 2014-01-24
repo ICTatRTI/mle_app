@@ -21,7 +21,7 @@
     border-radius: 0.5em;
     box-shadow: 2px 2px 5px #AAAAAA;
     background-color: #F6F7CB;
-    width: 30px;
+    width: 50px;
 }
 
 .rotate {
@@ -30,11 +30,7 @@
     -o-transform: rotate(270deg);
 
 }
-.vertical span {
-    display: inline-block;
-    vertical-align: center;
-    line-height: 5px;
-}
+
 
 div.verticleColumn {
     float: left;
@@ -235,7 +231,7 @@ div.no_activities {
     margin-right: 30px;
 }
 #goals {
-    width: 190px;
+    width: 160px;
 }
 
 
