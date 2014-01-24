@@ -8,6 +8,10 @@
      font-style: italic;
 }
 
+.dashboard_notes p{
+    line-height: 8px;
+}
+
 .vertical {
     margin-top: 100px;
     writing-mode:tb-rl;
@@ -17,6 +21,7 @@
     border-radius: 0.5em;
     box-shadow: 2px 2px 5px #AAAAAA;
     background-color: #F6F7CB;
+    width: 30px;
 }
 
 .rotate {
@@ -56,8 +61,9 @@ div.verticleColumn {
 }
 
 div.orange {
-    background-color: orange;
+    background-color: orange !important;
     cursor: pointer;
+    box-shadow: 5px 5px 5px #AAAAAA !important;
 }
 
 #mainPanel { 
@@ -65,10 +71,7 @@ div.orange {
     font-size: 10pt;
 }
 
-div.activities {
-    background-color: #F6F7CB;
 
-}
 
 div.functions {
     background-color: #EEEDFC;
@@ -201,10 +204,28 @@ div.goals {
     width: 190px;
     margin-right: 30px;
 }
+
 #activities{
     width: 190px;
     margin-right: 30px;
 }
+
+div.activities {
+    background-color: #F6F7CB;
+
+}
+
+div.bmgf_activities {
+    background-color: #DEE06C;
+
+}
+
+div.no_activities {
+    background-color: #F2F2E1;
+
+}
+
+
 #outputs{
     width: 190px;
     margin-right: 30px;
@@ -214,7 +235,7 @@ div.goals {
     margin-right: 30px;
 }
 #goals {
-    width: 130px;
+    width: 190px;
 }
 
 

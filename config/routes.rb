@@ -22,6 +22,10 @@ MleApp::Application.routes.draw do
   get 'behavior', to: "pages#behavior"
   get 'community', to: "pages#community"
   get 'nigeria/dashboard', to: "dashboard#main"
+  get 'nigeria/care_seeking', to: "pages#care_seeking"
+  get 'nigeria/behavior', to: "pages#behavior"
+  get 'nigeria/community', to: "pages#community"
+  get 'nigeria/treatment_coverage', to: "pages#treatment_coverage"
   
   get 'dashboard', to: "dashboard#main"
 
