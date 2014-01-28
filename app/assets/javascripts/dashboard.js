@@ -262,11 +262,25 @@
 					maxConnections:-1
 				});
 
+ instance.addEndpoint(chartWindow19, {
+					uuid:"chartWindow19-bottom",
+					anchor:"Bottom",
+					maxConnections:-1
+				});
+
+
  instance.addEndpoint(chartWindow20, {
 					uuid:"chartWindow20-right",
 					anchor:"Right",
 					maxConnections:-1
 				});
+
+  instance.addEndpoint(chartWindow20, {
+					uuid:"chartWindow20-top",
+					anchor:"Top",
+					maxConnections:-1
+				});
+
 
  instance.addEndpoint(chartWindow22, {
 					uuid:"chartWindow22-left",
@@ -276,6 +290,8 @@
 
  instance.connect({uuids:["chartWindow19-right", "chartWindow22-left"]});
  instance.connect({uuids:["chartWindow20-right", "chartWindow22-left"]});
+
+ instance.connect({uuids:["chartWindow19-bottom", "chartWindow20-top"]});
 
 
 	$( "#chartWindow2" ).mouseover(function() {
@@ -681,7 +697,13 @@
 	 //  Outputs
 	 // Prompt Care Seeking
 	 $( "#chartWindow19").mouseover(function() {
+	 	$( "#chartWindow2" ).addClass( "orange" );
+	 	$( "#chartWindow3" ).addClass( "orange" );
+	 	$( "#chartWindow11" ).addClass( "orange" );
+	 	$( "#chartWindow12" ).addClass( "orange" );
+	 	$( "#chartWindow13" ).addClass( "orange" );
 	 	$( "#chartWindow19" ).addClass( "orange" );
+	 	$( "#chartWindow20" ).addClass( "orange" );
 	 	$( "#chartWindow22" ).addClass( "orange" );
 	 	$( "#chartWindow24" ).addClass( "orange" );
 
@@ -694,7 +716,13 @@
 
 	 });
 	 $( "#chartWindow19" ).mouseout(function() {
+	 	$( "#chartWindow2" ).removeClass( "orange" );
+	 	$( "#chartWindow3" ).removeClass( "orange" );
+	 	$( "#chartWindow11" ).removeClass( "orange" );
+	 	$( "#chartWindow12" ).removeClass( "orange" );
+	 	$( "#chartWindow13" ).removeClass( "orange" );
 	 	$( "#chartWindow19" ).removeClass( "orange" );
+	 	$( "#chartWindow20" ).removeClass( "orange" );
 	 	$( "#chartWindow11" ).removeClass( "orange" );
 	 	$( "#chartWindow22" ).removeClass( "orange" );
 	 	$( "#chartWindow24" ).removeClass( "orange" );
